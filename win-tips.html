@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>Windows系统优化技巧 - 时光笔迹</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f7fa;
+    font-family: 'Microsoft Yahei', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #2a60af;
+    padding: 1.2rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+nav a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.article-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.article-title {
+    color: #2a60af;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.article-meta {
+    color: #999;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-content {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.9;
+}
+
+.article-content h3 {
+    color: #2a60af;
+    margin: 1.5rem 0 1rem;
+    font-size: 1.3rem;
+}
+
+.article-content p {
+    margin-bottom: 1rem;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #2a60af;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #1f4b88;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem 1.5rem;
+    }
+    nav a {
+        margin-right: 1rem;
+        font-size: 0.9rem;
+    }
+    .container {
+        padding: 0 1rem;
+    }
+    .article-card {
+        padding: 1.5rem;
+    }
+    .article-title {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+<h1>时光笔迹</h1>
+<nav>
+<a href="/">首页</a>
+<a href="#tech">技术杂谈</a>
+<a href="#win">Windows</a>
+<a href="#mac">Mac</a>
+<a href="#android">Android</a>
+<a href="#ios">iOS</a>
+<a href="#harmonyos">HarmonyOS</a>
+<a href="#linux">Linux</a>
+<a href="/about.html">关于</a>
+</nav>
+</header>
+<div class="container">
+<div class="article-card">
+<h1 class="article-title">Windows系统优化技巧</h1>
+<div class="article-meta">分类：Windows | 更新时间：2026-03-05</div>
+<div class="article-content">
+<h3>1. 关闭不必要的开机启动项</h3>
+<p>按下 Win + R，输入 msconfig，打开系统配置面板，切换到「启动」选项卡，取消勾选非必要的启动程序（如各类软件的自动启动），可以大幅提升开机速度。</p>
+
+<h3>2. 关闭系统冗余服务</h3>
+<p>按下 Win + R，输入 services.msc，找到以下服务并设置为「手动」或「禁用」：
+<br>- Print Spooler（不使用打印机可禁用）
+<br>- Windows Search（不需要系统搜索可禁用）
+<br>- Superfetch（机械硬盘建议保留，固态硬盘建议禁用）</p>
+
+<h3>3. 清理系统垃圾</h3>
+<p>按下 Win + S，搜索「磁盘清理」，选择系统盘（通常是C盘），勾选「临时文件、下载文件、回收站」等选项，点击确定清理；也可以使用快捷键 Win + R，输入 cleanmgr 快速打开。</p>
+
+<h3>4. 开启固态硬盘优化（如有SSD）</h3>
+<p>右键点击此电脑 → 管理 → 磁盘管理，右键SSD磁盘 → 属性 → 策略，勾选「启用写入缓存」和「关闭设备上的Windows写入缓存缓冲区刷新」，提升SSD读写速度。</p>
+</div>
+<a href="/" class="back-btn">返回首页</a>
+</div>
+</div>
+</body>
+</html>
